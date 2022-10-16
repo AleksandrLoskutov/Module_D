@@ -4,6 +4,6 @@
 ___
 ![dockers_run](./images/dockers_run.PNG)
 
-**2. Скриншот с логами работы различных сервисов**
+**2. Скриншоты с логами работы различных сервисов**
 ___
 ![services_logs](./images/services_logs.PNG)
