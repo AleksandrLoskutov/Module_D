@@ -6,4 +6,7 @@ ___
 
 **2. Скриншоты с логами работы различных сервисов**
 ___
-![services_logs](./images/services_logs.PNG)
+![services_logs1](./images/services_logs1.PNG)
+
+___
+![services_log2s](./images/services_logs2.PNG)
