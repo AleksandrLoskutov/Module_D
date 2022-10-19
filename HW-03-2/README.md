@@ -20,3 +20,5 @@ ___
 - _docker stack deploy --compose-file docker-compose.yml stack_sockshop_
 ![deploy_stack](./images/deploy_stack.PNG)
 ___
+**5. Проверка работы проекта через браузер**
+![sock_shop](./images/sock_shop.PNG)
