@@ -32,5 +32,5 @@ ___
 ![swarm_repl](./images/swarm_repl.PNG)
 ___
 **8. Удалил проект.**
-- На управляющей ноде выполнил:_docker stack rm stack_sockshop_
+- На управляющей ноде выполнил: _docker stack rm stack_sockshop_
 ![stack_rm](./images/stack_rm.PNG)
