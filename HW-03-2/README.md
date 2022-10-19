@@ -7,10 +7,9 @@ ___
 **2. Установил на каждую Docker Engine и Docker Compose**
 ___
 Для установки использовал команды:
-- sudo curl -fsSL https://get.docker.com -o get-docker.sh # Загрузка установочного скрипта
-- sh get-docker.sh # Запуск установочного скрипта
-- sudo usermod -aG docker $USER # Запуск Docker Engine без "sudo"
-
+- _sudo curl -fsSL https://get.docker.com -o get-docker.sh_   # Загрузка установочного скрипта
+- _sh get-docker.sh_   # Запуск установочного скрипта
+- _sudo usermod -aG docker $USER_   # Запуск Docker Engine без "sudo"
 ___
 sockshop-shipping-1
 ![services_log2s](./images/services_logs2.PNG)
