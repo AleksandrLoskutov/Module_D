@@ -27,6 +27,6 @@ ___
 ![swarm_cmd](./images/swarm_cmd.PNG)
 ___
 **7.Масштабирование frontend-сервиса до двух реплик.**
-- На управляющей ноде выполнил:*
+- На управляющей ноде выполнил:
 - _docker service scale stack_sockshop_front-end=2_
 ![swarm_repl](./images/swarm_repl.PNG)
