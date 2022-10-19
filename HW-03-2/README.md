@@ -23,5 +23,5 @@ ___
 **5. Проверка работы проекта через браузер**
 ![sock_shop](./images/sock_shop.PNG)
 ___
-**6. Вывод команд _docker node ls_ и _docker service ls_
+**6. Вывод команд _docker node ls_ и _docker service ls_**
 ![swarm_cmd](./images/swarm_cmd.PNG)
