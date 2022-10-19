@@ -4,10 +4,12 @@
 ___
 ![vm_swarm](./images/vm_swarm.PNG)
 
-**2. Скриншоты с логами работы различных сервисов**
+**2. Установил на каждую Docker Engine и Docker Compose**
 ___
-sockshop-orders-db-1
-![services_logs1](./images/services_logs1.PNG)
+Для установки использовал команды:
+- sudo curl -fsSL https://get.docker.com -o get-docker.sh # Загрузка установочного скрипта
+- sh get-docker.sh # Запуск установочного скрипта
+- sudo usermod -aG docker $USER # Запуск Docker Engine без "sudo"
 
 ___
 sockshop-shipping-1
