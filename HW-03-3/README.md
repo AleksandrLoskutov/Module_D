@@ -16,6 +16,9 @@ ___
 - в файле **variables.tf** прописать свой приватный и публичный ключ:
   - _private_key = "~/.ssh/id_*"
   - _pub_key     = "~/.ssh/id_*.pub"
+- вернуться в каталог _HW-03-3/deploy/_
 - выполнить _terraform init_
 - выполнить _terraform apply_
 ___
+**Результат выполнения**
+[terraform_deploy]
