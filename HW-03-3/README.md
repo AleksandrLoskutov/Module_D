@@ -23,7 +23,9 @@ ___
 **Результат развертывания**
 - терминал
 - ![terraform_deploy](./images/terraform_deploy.PNG)
+- Яндекс Облако
+- ![yandex_result](./images/yandex_result.PNG)
 - веб браузер
-![web_result](./images/web_result.PNG)
+- ![web_result](./images/web_result.PNG)
 - управляющая нода
-![manager_node](./images/manager_node.PNG)
+- ![manager_node](./images/manager_node.PNG)
