@@ -10,9 +10,9 @@ ___
 - загрузить содержимое из удаленного репозитория
 - перейти в каталог: _HW-03-3/deploy/_
 - в файле main.tf внести свои значения:  
---_token     = "Add token"_
---_cloud_id  = "Add cloud_id"_
---_folder_id = "Add folder_id"_
+- -_token     = "Add token"_
+- -_cloud_id  = "Add cloud_id"_
+- -_folder_id = "Add folder_id"_
 - перейти в каталог 
 - выполнить _terraform init_
 - выполнить _terraform apply_
