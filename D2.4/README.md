@@ -16,4 +16,6 @@ ___
   - _sudo snap install kubectl --classic_
 ___
 **Результаты выполнения команд**
+- _kubectl get nodes_ - количество нод в кластере
+- ![minicube-nodes](./images/minicube-nodes.PNG)
 
