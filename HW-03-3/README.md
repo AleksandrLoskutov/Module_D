@@ -21,7 +21,7 @@ ___
 - выполнить _terraform apply_
 ___
 **Результат развертывания**
-терминал
+- терминал
 - ![terraform_deploy](./images/terraform_deploy.PNG)
 - веб браузер
 ![web_result](./images/web_result.PNG)
