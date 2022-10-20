@@ -14,8 +14,8 @@ ___
   - _folder_id = "Add folder_id"_
 - перейти в каталог _HW-03-3/deploy/modules/instance_
 - в файле **variables.tf** прописать свой приватный и публичный ключ:
-  - _private_key = "~/.ssh/id_*"_
-  - _pub_key     = "~/.ssh/id_*.pub"_
+  - _private_key = "~/.ssh/id_*"
+  - _pub_key     = "~/.ssh/id_*.pub"
 - выполнить _terraform init_
 - выполнить _terraform apply_
 ___
