@@ -10,5 +10,10 @@ ___
 - Установил _**Minikube**_:
   - _curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64_
   - _sudo install minikube-linux-amd64 /usr/local/bin/minikube_
-- Запустил, указал количество нод - 5, имя - multinode-cluster
-  - _minikube start --nodes 5 -p multinode-cluster_ 
+- Запустил, указал количество нод - 5, имя - multinode-cluster:
+  - _minikube start --nodes 5 -p multinode-cluster_
+- Установил _**kubectl**_:
+  - _sudo snap install kubectl --classic_
+___
+**Результаты выполнения команд**
+
