@@ -20,5 +20,10 @@ ___
 - выполнить _terraform init_
 - выполнить _terraform apply_
 ___
-**Результат выполнения**
-[terraform_deploy]
+**Результат развертывания**
+- терминал
+![terraform_deploy](./images/terraform_deploy.PNG)
+- веб браузер
+![web_result](./images/web_result.PNG)
+- управляющая нода
+![manager_node](./images/manager_node.PNG)
