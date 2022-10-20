@@ -18,4 +18,6 @@ ___
 **Результаты выполнения команд**
 - _kubectl get nodes_ - количество нод в кластере
 - ![minicube-nodes](./images/minicube-nodes.PNG)
+- _minikube status -p multinode-cluster_ - статус кластера
+- ![minicube-status](./images/minikube-status.PNG)
 
