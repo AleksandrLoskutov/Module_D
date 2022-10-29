@@ -20,4 +20,9 @@ ___
 - ![minicube-nodes](./images/minicube-nodes.PNG)
 - _minikube status -p multinode-cluster_ - статус кластера
 - ![minicube-status](./images/minicube-status.PNG)
+___
+
+**Задание D2.4.2**
+___
+
 
