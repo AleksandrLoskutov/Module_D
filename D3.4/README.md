@@ -114,5 +114,11 @@ ___
 - ![secret_k8s_1](./images/secret_k8s_1.PNG)
 - Создал **secret.yaml** с содержимым:
 ```
-
+apiVersion: v1
+kind: Secret
+metadata:
+  name: auth-basic
+type: Opaque
+data:
+  user1: dXNlcjE6JGFwcjEkL2tBaUR4SFkkT2dXNUNaNk5lSVhlUXRhUFF1dWprLwo=
 ```
