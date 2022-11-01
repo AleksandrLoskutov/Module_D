@@ -81,3 +81,26 @@ data:
 - Для проверки зашел в один из подов, и проверил конфиг _nginx_
 - ![configmap_k8s](./images/configmap_k8s.PNG)
 ___
+3. Создать service для того, чтобы можно было обращаться к любому из Pod’ов по единому имени:
+- имя сервиса sf-webserver;
+- внешний порт — 80.
+___
+- Создал **service.yaml** с содержимым:
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf-webserver
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+```
+- Применил конфигурацию - _kubectl apply -f ._
+- Проверил присязку подов к сервису по 80-му порту
+- ![service_k8s_1](./images/service_k8s_1.PNG)
+- Проверил обращение к сервису по имени
+- ![service_k8s_2](./images/service_k8s_2.PNG)
