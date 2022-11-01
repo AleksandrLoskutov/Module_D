@@ -77,3 +77,7 @@ data:
           - key: nginx.conf
             path: nginx.conf
 ```
+- Применил конфигурацию - _kubectl apply -f ._
+- Для проверки зашел в один из подов, и проверил конфиг _nginx_
+- ![configmap_k8s](./images/configmap_k8s.PNG)
+___
