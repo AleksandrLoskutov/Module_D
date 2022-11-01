@@ -33,3 +33,5 @@ spec:
 ```
 - Применил конфиг с помощью команды - _kubectl apply -f deployment.yaml_
 - ![deployment_k8s](./images/deployment_k8s.PNG)
+___
+
