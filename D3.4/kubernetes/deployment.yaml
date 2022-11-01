@@ -23,6 +23,9 @@ spec:
         - name: config
           mountPath: "/etc/nginx"
           readOnly: true
+        - name: user-auth
+          mountPath: "/etc/nginx/conf"
+          readOnly: true
       volumes:
       - name: config
         configMap:
@@ -30,3 +33,9 @@ spec:
           items:
           - key: nginx.conf
             path: nginx.conf
+      - name: user-auth
+        secret:
+          secretName: auth-basic
+          items:
+          - key: user1
+            path: htpasswd
