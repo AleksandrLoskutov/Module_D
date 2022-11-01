@@ -17,5 +17,7 @@ data:
             root   /usr/share/nginx/html;
             index  index.html index.htm;
           }
+          auth_basic "User Auth";
+          auth_basic_user_file conf/htpasswd;
       }
     }
