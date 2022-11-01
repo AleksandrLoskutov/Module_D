@@ -65,4 +65,15 @@ data:
 ```
 - Добавил в **deployment.yaml** следующую конфигурацию:
 ```
+        volumeMounts:
+        - name: config
+          mountPath: "/etc/nginx"
+          readOnly: true
+      volumes:
+      - name: config
+        configMap:
+          name: nginx-config
+          items:
+          - key: nginx.conf
+            path: nginx.conf
 ```
