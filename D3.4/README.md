@@ -122,3 +122,22 @@ type: Opaque
 data:
   user1: dXNlcjE6JGFwcjEkL2tBaUR4SFkkT2dXNUNaNk5lSVhlUXRhUFF1dWprLwo=
 ```
+- Добавил в **deployment.yaml** следующую конфигурацию:
+```
+_volumeMounts:_ добавил
+        - name: user-auth
+          mountPath: "/etc/nginx/conf"
+          readOnly: true
+_volumes:_ добавил
+      - name: user-auth
+        secret:
+          secretName: auth-basic
+          items:
+          - key: user1
+            path: htpasswd
+```
+- Применил конфигурацию - _kubectl apply -f ._
+___
+5. Подключить в наш контейнер эти секреты.
+Обновить конфиг nginx таким образом, чтобы подключенные секреты использовались для авторизации для доступа к странице по умолчанию в nginx.
+___
