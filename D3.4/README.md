@@ -122,13 +122,14 @@ type: Opaque
 data:
   user1: dXNlcjE6JGFwcjEkL2tBaUR4SFkkT2dXNUNaNk5lSVhlUXRhUFF1dWprLwo=
 ```
-- Добавил в **deployment.yaml** следующую конфигурацию:
+- В **deployment.yaml** добавил следующую конфигурацию в блоки volumeMounts и volumes:
 ```
-_volumeMounts:_ добавил
+        volumeMounts:
         - name: user-auth
           mountPath: "/etc/nginx/conf"
           readOnly: true
-_volumes:_ добавил
+      ....
+      volumes:
       - name: user-auth
         secret:
           secretName: auth-basic
@@ -141,3 +142,36 @@ ___
 5. Подключить в наш контейнер эти секреты.
 Обновить конфиг nginx таким образом, чтобы подключенные секреты использовались для авторизации для доступа к странице по умолчанию в nginx.
 ___
+Настроил авторизацию _nginx_ через **configmap.yaml**
+```
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  nginx.conf: |
+    user nginx;
+    worker_processes  1;
+    events {
+      worker_connections  10240;
+    }
+    http {
+      server {
+          listen       80;
+          server_name  localhost;
+          location / {
+            root   /usr/share/nginx/html;
+            index  index.html index.htm;
+          }
+          auth_basic "User Auth";
+          auth_basic_user_file conf/htpasswd;
+      }
+    }
+```
+- Применил конфигурацию - _kubectl apply -f ._
+- Проверил работу сервиса без авторизации
+- ![secret_k8s_2](./images/secret_k8s_2.PNG)
+- Проверил работу сервиса с авторизацией
+- ![secret_k8s_3](./images/secret_k8s_3.PNG)
+___
+Кофиги находятся тут
