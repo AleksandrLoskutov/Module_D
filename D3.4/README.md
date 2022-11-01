@@ -174,4 +174,4 @@ data:
 - Проверил работу сервиса с авторизацией
 - ![secret_k8s_3](./images/secret_k8s_3.PNG)
 ___
-**Кофиги находятся в каталоге** [***kubernetes***](/main/D3.4/kubernetes)
+**Кофиги находятся в каталоге** [***kubernetes***](/D3.4/kubernetes)
