@@ -20,4 +20,7 @@ helm upgrade --install --namespace prometheus prometheus prometheus-community/pr
 ```
 4. Проверил результат
 - ![result_prometheus](./images/result_prometheus.PNG)
+5. Удалил все
+- ![delete_prometheus](./images/delete_prometheus.PNG)
+
 
