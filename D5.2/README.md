@@ -1,7 +1,7 @@
 # ЗАДАНИЕ D5.2.3 (HW-03)
 
 1. Создал **namespace** командой - _kubectl create ns prometheus_
-![ns_prometheus](./images/ns_prometheus.PNG)
+- ![ns_prometheus](./images/ns_prometheus.PNG)
 
 2. Создал файл _values.yaml_
 ```
@@ -19,5 +19,5 @@ pushgateway:
 helm upgrade --install --namespace prometheus prometheus prometheus-community/prometheus --values values.yaml
 ```
 4. Проверил результат
-![result_prometheus](./images/result_prometheus.PNG)
+- ![result_prometheus](./images/result_prometheus.PNG)
 
